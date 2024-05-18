@@ -100,3 +100,70 @@ h1 {
 .bold {
   font-weight: 700;
 }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .app .description {
+    right: -70%;
+  }
+
+  .container {
+    height: auto;
+    top: 5%;
+  }
+
+  .app .bottom {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    top: 2%;
+  }
+
+  .app .description {
+    right: -60%;
+  }
+
+  .app .bottom {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .app input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .app .description {
+    right: -50%;
+  }
+
+  .app .bottom {
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+}
